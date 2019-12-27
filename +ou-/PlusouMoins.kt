@@ -22,23 +22,6 @@ fun plusOuMoins(): Unit{
         val numberProp = getProp!!.toInt()
 
 
-    /* if(numberProp == number){
-            test = true
-            println("Bravo tu as trouvé le chiffre en $compteur essaies")
-        }
-        else if (numberProp < number){
-            println("Plus grand")
-            compteur++
-        }
-        else if(numberProp > number){
-            println("Moins grand")
-            compteur++
-        }
-        else{
-            println("t'es claqué")
-        }
-    */
-
         when(numberProp){
             number -> {
                 test = true
@@ -47,11 +30,11 @@ fun plusOuMoins(): Unit{
 
             //+/-5
             in (number-5)..number->{
-                println("t'es chaud bouillant, tente au dessus")
+                println("t'es brulant, tente au dessus")
                 compteur++
             }
             in number..(number+5)->{
-                println("t'es chaud bouillant, tente en dessous")
+                println("t'es brulant, tente en dessous")
                 compteur++
             }
 
@@ -77,11 +60,11 @@ fun plusOuMoins(): Unit{
 
             //+/-99
             in (number-999)..number->{
-                println("t'es glacé, tente au dessus")
+                println("t'es gelé, tente au dessus")
                 compteur++
             }
             in number..(number+999)->{
-                println("t'es glacé, tente en dessous")
+                println("t'es gelé, tente en dessous")
                 compteur++
             }
 
